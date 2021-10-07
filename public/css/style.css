@@ -1,0 +1,551 @@
+body {
+	background-color: #FEDF9E;
+	color: #000000;
+	font-family: 'Avenir Next', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+  line-height: 1.8;
+}
+
+img { height: auto; max-width: 100%; }
+
+.button { background-color: #000000; border: 2px solid #000000; color: #ffffff; display: inline-block; font-size: 18px; font-weight: 600; margin: 0; padding: 12px 32px 14px 32px; text-decoration: none; text-transform: uppercase; }
+.button:hover { background-color: #ffffff; color: #000000}
+
+.site-header { background-color: #FEDF9E;}
+
+nav a { color: black; display: inline-block; margin: 0 4px; text-decoration: none; font-size: 20;}
+nav a:first-child { margin: 0 4px 0 0; }
+
+main { margin: 0 5%; }
+
+.home-page { display: grid; font-size: 24px; grid-template-columns: 50% 50%; line-height: 1.4; margin: 2em auto 0 auto; max-width: 45em; padding: 0; }
+.home-page h1 { font-size: 1em; margin: 4em 0 0 0; }
+.home-page .button { margin: 1em 0; }
+
+footer { background-color: #000000; color: rgba(255, 255, 255, 0.6); padding: 5%; }
+
+@media screen and (max-width: 45em) {
+  .home-page { display: block; }
+}
+
+
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  html {
+    background: #0e1a25;
+    font-size: 0.625em;
+  }
+  
+  .soc {
+    display: block;
+    font-size: 0;
+    list-style: none;
+    margin: 0;
+    padding: 48px;
+    padding: 4.8rem;
+    text-align: center;
+  }
+  .soc li {
+    display: inline-block;
+    margin: 12px;
+    margin: 1.2rem;
+  }
+  .soc a, .soc svg {
+    display: block;
+  }
+  .soc a {
+    position: relative;
+    height: 96px;
+    height: 9.6rem;
+    width: 96px;
+    width: 9.6rem;
+  }
+  .soc svg {
+    height: 100%;
+    width: 100%;
+  }
+  .soc em {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: -0.75em;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .icon-1:hover, .icon-2:hover, .icon-3:hover, .icon-4:hover, .icon-5:hover, .icon-6:hover, .icon-7:hover, .icon-8:hover, .icon-9:hover, .icon-10:hover, .icon-11:hover, .icon-12:hover, .icon-13:hover, .icon-14:hover, .icon-15:hover, .icon-16:hover, .icon-17:hover, .icon-18:hover, .icon-19:hover, .icon-20:hover, .icon-21:hover, .icon-22:hover, .icon-23:hover, .icon-24:hover, .icon-25:hover, .icon-26:hover, .icon-27:hover, .icon-28:hover, .icon-29:hover, .icon-30:hover {
+    border-radius: 100%;
+    color: #0e1a25;
+    fill: #0e1a25;
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+    -webkit-transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+    transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+    transition: background-color 0.5s, transform 0.5s ease-out;
+    transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+  }
+  
+  .icon-1 {
+    color: #d94a26;
+    fill: #d94a26;
+  }
+  .icon-1:hover {
+    background: #d94a26;
+  }
+  
+  .icon-2 {
+    color: #d96e26;
+    fill: #d96e26;
+  }
+  .icon-2:hover {
+    background: #d96e26;
+  }
+  
+  .icon-3 {
+    color: #d99126;
+    fill: #d99126;
+  }
+  .icon-3:hover {
+    background: #d99126;
+  }
+  
+  .icon-4 {
+    color: #d9b526;
+    fill: #d9b526;
+  }
+  .icon-4:hover {
+    background: #d9b526;
+  }
+  
+  .icon-5 {
+    color: #d9d926;
+    fill: #d9d926;
+  }
+  .icon-5:hover {
+    background: #d9d926;
+  }
+  
+  .icon-6 {
+    color: #b5d926;
+    fill: #b5d926;
+  }
+  .icon-6:hover {
+    background: #b5d926;
+  }
+  
+  .icon-7 {
+    color: #91d926;
+    fill: #91d926;
+  }
+  .icon-7:hover {
+    background: #91d926;
+  }
+  
+  .icon-8 {
+    color: #6ed926;
+    fill: #6ed926;
+  }
+  .icon-8:hover {
+    background: #6ed926;
+  }
+  
+  .icon-9 {
+    color: #4ad926;
+    fill: #4ad926;
+  }
+  .icon-9:hover {
+    background: #4ad926;
+  }
+  
+  .icon-10 {
+    color: #26d926;
+    fill: #26d926;
+  }
+  .icon-10:hover {
+    background: #26d926;
+  }
+  
+  .icon-11 {
+    color: #26d94a;
+    fill: #26d94a;
+  }
+  .icon-11:hover {
+    background: #26d94a;
+  }
+  
+  .icon-12 {
+    color: #26d96e;
+    fill: #26d96e;
+  }
+  .icon-12:hover {
+    background: #26d96e;
+  }
+  
+  .icon-13 {
+    color: #26d991;
+    fill: #26d991;
+  }
+  .icon-13:hover {
+    background: #26d991;
+  }
+  
+  .icon-14 {
+    color: #26d9b5;
+    fill: #26d9b5;
+  }
+  .icon-14:hover {
+    background: #26d9b5;
+  }
+  
+  .icon-15 {
+    color: #26d9d9;
+    fill: #26d9d9;
+  }
+  .icon-15:hover {
+    background: #26d9d9;
+  }
+  
+  .icon-16 {
+    color: #26b5d9;
+    fill: #26b5d9;
+  }
+  .icon-16:hover {
+    background: #26b5d9;
+  }
+  
+  .icon-17 {
+    color: #2691d9;
+    fill: #2691d9;
+  }
+  .icon-17:hover {
+    background: #2691d9;
+  }
+  
+  .icon-18 {
+    color: #266ed9;
+    fill: #266ed9;
+  }
+  .icon-18:hover {
+    background: #266ed9;
+  }
+  
+  .icon-19 {
+    color: #264ad9;
+    fill: #264ad9;
+  }
+  .icon-19:hover {
+    background: #264ad9;
+  }
+  
+  .icon-20 {
+    color: #2626d9;
+    fill: #2626d9;
+  }
+  .icon-20:hover {
+    background: #2626d9;
+  }
+  
+  .icon-21 {
+    color: #4a26d9;
+    fill: #4a26d9;
+  }
+  .icon-21:hover {
+    background: #4a26d9;
+  }
+  
+  .icon-22 {
+    color: #6e26d9;
+    fill: #6e26d9;
+  }
+  .icon-22:hover {
+    background: #6e26d9;
+  }
+  
+  .icon-23 {
+    color: #9126d9;
+    fill: #9126d9;
+  }
+  .icon-23:hover {
+    background: #9126d9;
+  }
+  
+  .icon-24 {
+    color: #b526d9;
+    fill: #b526d9;
+  }
+  .icon-24:hover {
+    background: #b526d9;
+  }
+  
+  .icon-25 {
+    color: #d926d9;
+    fill: #d926d9;
+  }
+  .icon-25:hover {
+    background: #d926d9;
+  }
+  
+  .icon-26 {
+    color: #d926b5;
+    fill: #d926b5;
+  }
+  .icon-26:hover {
+    background: #d926b5;
+  }
+  
+  .icon-27 {
+    color: #d92691;
+    fill: #d92691;
+  }
+  .icon-27:hover {
+    background: #d92691;
+  }
+  
+  .icon-28 {
+    color: #d9266e;
+    fill: #d9266e;
+  }
+  .icon-28:hover {
+    background: #d9266e;
+  }
+  
+  .icon-29 {
+    color: #d9264a;
+    fill: #d9264a;
+  }
+  .icon-29:hover {
+    background: #d9264a;
+  }
+  
+  .icon-30 {
+    color: #d92626;
+    fill: #d92626;
+  }
+  .icon-30:hover {
+    background: #d92626;
+  }
+
+
+
+/* //footer links// */
+
+/* registration page */
+
+.register{
+    background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+    margin-top: 3%;
+    padding: 3%;
+}
+.register-left{
+    text-align: center;
+    color: #fff;
+    margin-top: 4%;
+}
+.register-left input{
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    width: 60%;
+    background: #f8f9fa;
+    font-weight: bold;
+    color: #383d41;
+    margin-top: 30%;
+    margin-bottom: 3%;
+    cursor: pointer;
+}
+.register-right{
+    background: #f8f9fa;
+    border-top-left-radius: 10% 50%;
+    border-bottom-left-radius: 10% 50%;
+}
+.register-left img{
+    margin-top: 15%;
+    margin-bottom: 5%;
+    width: 25%;
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+.register-left p{
+    font-weight: lighter;
+    padding: 12%;
+    margin-top: -9%;
+}
+.register .register-form{
+    padding: 10%;
+    margin-top: 10%;
+}
+.btnRegister{
+    float: right;
+    margin-top: 10%;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    background: #0062cc;
+    color: #fff;
+    font-weight: 600;
+    width: 50%;
+    cursor: pointer;
+}
+.register .nav-tabs{
+    margin-top: 3%;
+    border: none;
+    background: #0062cc;
+    border-radius: 1.5rem;
+    width: 28%;
+    float: right;
+}
+.register .nav-tabs .nav-link{
+    padding: 2%;
+    height: 34px;
+    font-weight: 600;
+    color: #fff;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+.register .nav-tabs .nav-link:hover{
+    border: none;
+}
+.register .nav-tabs .nav-link.active{
+    width: 100px;
+    color: #0062cc;
+    border: 2px solid #0062cc;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+.register-heading{
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: -15%;
+    color: #495057;
+}
+
+/* 
+about us page */
+
+
+
+
+body {
+    font-family: 'Roboto';font-size: 16px;
+}
+
+.aboutus-section {
+    padding: 90px 0;
+}
+.aboutus-title {
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: 32px;
+    margin: 0 0 39px;
+    padding: 0 0 11px;
+    position: relative;
+    text-transform: uppercase;
+    color: #000;
+}
+.aboutus-title::after {
+    background: #fdb801 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 54px;
+}
+.aboutus-text {
+    color: #606060;
+    font-size: 13px;
+    line-height: 22px;
+    margin: 0 0 35px;
+}
+
+a:hover, a:active {
+    color: #ffb901;
+    text-decoration: none;
+    outline: 0;
+}
+.aboutus-more {
+    border: 1px solid #fdb801;
+    border-radius: 25px;
+    color: #fdb801;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0;
+    padding: 7px 20px;
+    text-transform: uppercase;
+}
+.feature .feature-box .iconset {
+    background: #fff none repeat scroll 0 0;
+    float: left;
+    position: relative;
+    width: 18%;
+}
+.feature .feature-box .iconset::after {
+    background: #fdb801 none repeat scroll 0 0;
+    content: "";
+    height: 150%;
+    left: 43%;
+    position: absolute;
+    top: 100%;
+    width: 1px;
+}
+
+.feature .feature-box .feature-content h4 {
+    color: #0f0f0f;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin: 0 0 5px;
+}
+
+
+.feature .feature-box .feature-content {
+    float: left;
+    padding-left: 28px;
+    width: 78%;
+}
+.feature .feature-box .feature-content h4 {
+    color: #0f0f0f;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin: 0 0 5px;
+}
+.feature .feature-box .feature-content p {
+    color: #606060;
+    font-size: 13px;
+    line-height: 22px;
+}
+.icon {
+    color : #f4b841;
+    padding:0px;
+    font-size:40px;
+    border: 1px solid #fdb801;
+    border-radius: 100px;
+    color: #fdb801;
+    font-size: 28px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    width: 70px;
+}
